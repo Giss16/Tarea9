@@ -1,0 +1,25 @@
+public class Clase {
+            public static void main(String[] args) {
+
+                Taxi taxi = new Taxi("Onix sedán","chevrolet","taxi");
+                Taxi taxi1 = new Taxi("tsuru","GST","taxi");
+
+                System.out.println("");
+                System.out.println(taxi.toString());
+                System.out.println("");
+                System.out.println(taxi1.toString());
+                System.out.println("");
+
+                taxi.avanzar();
+                System.out.println("");
+                taxi1.apagar();
+                System.out.println("");
+                taxi.trabajar();
+                System.out.println("");
+                taxi.detener();
+                System.out.println("");
+                taxi1.girarDerecha();
+                System.out.println("");
+                taxi.girarIzquierda();
+            }
+        }

@@ -1,0 +1,50 @@
+import java.awt.*;
+public class Taxi extends Automovil{
+    private String tamaño;
+    private String modelo;
+    private Color color;
+
+    public Taxi() {
+    }
+
+    public Taxi(String marca, String modelo, String tipo) {
+        super(marca, modelo, tipo);
+    }
+
+    @Override
+    public String getTamaño() {
+        return tamaño;
+    }
+
+    @Override
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    @Override
+    public String getModelo() {
+        return modelo;
+    }
+
+    @Override
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+    public void avanzar(){
+        System.out.println("El taxi esta avanzando...");
+    }
+    public void trabajar(){
+        System.out.println("El taxi esta trabajando...");
+    }
+    public void llevarPasajeros(){
+        System.out.println("El taxi trae pasajeros...");
+    }
+}

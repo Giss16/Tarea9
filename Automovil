@@ -1,0 +1,63 @@
+public class Automovil extends Vehiculo{
+    private String marca;
+    private String modelo;
+    private String tipo;
+
+    public Automovil() {
+    }
+
+    public Automovil(String marca, String modelo, String tipo) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.tipo = tipo;
+    }
+
+    @Override
+    public String getMarca() {
+        return marca;
+    }
+
+    @Override
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    @Override
+    public String getModelo() {
+        return modelo;
+    }
+
+    @Override
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "Automovil{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", tipo='" + tipo + '\'' +
+                '}';
+    }
+    public void detener(){
+        System.out.println("El automovil esta detenido...");
+    }
+    public void apagar(){
+        System.out.println("El automovil esta apagandose...");
+    }
+    public void girarDerecha(){
+        System.out.println("El automovil esta girando a la derecha...");
+    }
+    public void girarIzquierda(){
+        System.out.println("El automovil esta girando a la izquierda...");
+    }
+}
